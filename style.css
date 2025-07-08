@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fredoka One', cursive;
+  background: #f6ddb0;
+  color: #7a3d06;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background: #fdf2de;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-weight: 750;
+  font-size: 2.4rem;
+  color: #a05211;
+  letter-spacing: 1px;
+}
+
+button.contact-btn {
+  background: #eba54c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 0.85rem 2.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 6px rgb(235 165 76 / 0.7);
+}
+
+button.contact-btn:hover,
+button.contact-btn:focus {
+  background: #df8f1f;
+  outline: none;
+  box-shadow: 0 0 10px 3px #d88815aa;
+}
+
+main {
+  background: #f2af4d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+#about-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#about-us .text-container {
+  flex: 1.4 1 300px;
+  min-width: 300px;
+}
+
+#about-us h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3.5rem;
+  color: #5a3901;
+  text-shadow: 2px 2px #875a1c;
+  user-select: none;
+  letter-spacing: 4px;
+  margin-bottom: 0.75rem;
+}
+
+#about-us p {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.75rem;
+  color: #5d3600d0;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+#about-us .image-container {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#about-us .image-container img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 16px 0 16px 16px;
+  box-shadow: 0 5px 15px #a6690a88;
+  user-select: none;
+}
+
+#works {
+  text-align: center;
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  user-select: none;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.slider-row {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 240px;
+  mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+  gap: 18px;
+}
+
+.reverse .slider-track {
+  animation: scroll-left 36s linear infinite;
+}
+
+.slider-track img {
+  width:200px;
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #ffd88d;
+  box-shadow: 0 4px 8px #00000030;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+#contact-section {
+  background: #f2af4d;
+  padding: 2rem 1rem 4rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#contact-left, #contact-right {
+  flex: 1 1 300px;
+  min-width: 280px;
+  border-radius: 16px;
+}
+
+#contact-left {
+  background: #fce9c6;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 15px #b6821a88;
+  user-select: none;
+  align-items: center;
+}
+
+#contact-left h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.8rem;
+  color: #4b3000;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 2px 8px #c6a45f88;
+  transition: transform 0.2s ease;
+  min-width: 180px;
+}
+
+.contact-info:hover {
+  transform: scale(1.05);
+}
+
+.contact-info img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.contact-info span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Fredoka One', cursive;
+  color: #6f3c01;
+}
+
+.find-us-text {
+  color: #4b3000;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+  user-select: none;
+  margin-top: auto;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.find-us-text:hover,
+.find-us-text:focus {
+  color: #d27400;
+  outline: rgb(248, 166, 24);
+}
+
+#contact-right {
+  background: #fce9c6;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: inset 4px 4px 15px #daa63c88;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  font-weight: 700;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.40rem;
+  color: #6f3c01;
+  user-select: none;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: 'Fredoka One', cursive;
+  box-shadow: inset 2px 2px 8px #d3b174dd;
+  resize: vertical;
+  min-height: 40px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: 2px solid #d27400;
+  box-shadow: inset 2px 2px 10px #dbac3fdd;
+}
+
+button[type="submit"] {
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #4069f4;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #244fc2;
+  outline: none;
+}
+
+footer {
+  background: #fce9c6;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #734105;
+  user-select: none;
+}
+
+@media (max-width: 1024px) {
+  .slider-track img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 2rem;
+  }
+  button.contact-btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+  }
+  #about-us h2 {
+    font-size: 2.5rem;
+  }
+  #works {
+    font-size: 2rem;
+  }
+  .slider-track img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo {
+    justify-content: center;
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  button.contact-btn {
+    margin-top: 0.5rem;
+  }
+}

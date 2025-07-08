@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Honey Home Cakes</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="logo1.png">
+</head>
+<body>
+
+<header>
+  <div class="logo" aria-label="Honey Home Cakes logo">
+    <img src='logo.png' alt="Circular logo with a house and text Honey Home Cake in brown and beige colors" />
+    <span class="logo-text">HONEY HOME CAKES</span>
+  </div>
+  <button class="contact-btn" aria-label="Contact us button" tabindex="0" onclick="scrollToContact()">CONTACT US</button>
+</header>
+
+<main>
+  <!-- About Us Section -->
+  <section id="about-us" aria-labelledby="about-us-title">
+    <div class="text-container">
+      <h2 id="about-us-title">ABOUT US</h2>
+      <p>
+        Hey there! We're HONEY HOME CAKE , your go-to spot for delicious cakes and treats. We're all about quality ingredients, creative designs, and making your taste buds happy! Our passion is baking fresh, scrumptious cakes using the finest ingredients to ensure every bite melts in your mouth.
+      </p>
+      <p>
+        Custom flavours, designs, and sizes available
+      </p>
+    </div>
+    <div class="image-container">
+      <img src='cakes/allcakes.png' alt="Assortment of beautifully decorated cakes including chocolate, fruit, and cream topped varieties with a large pink bow" />
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section id="works" aria-label="Gallery of cake works">
+    <h2>OUR WORKS</h2>
+    <div class="slider-container">
+      <!-- First row -->
+      <div class="slider-row">
+        <div class="slider-track">
+          <!-- 14 images x 2 (for looping) -->
+        <img src="cakes/01.jpg" alt="Cake 01" />
+        <img src="cakes/02.jpg" alt="Cake 02" />
+        <img src="cakes/03.jpg" alt="Cake 03" />
+        <img src="cakes/04.jpg" alt="Cake 04" />
+        <img src="cakes/05.jpg" alt="Cake 05" />
+        <img src="cakes/06.jpg" alt="Cake 06" />
+        <img src="cakes/07.jpg" alt="Cake 07" />
+        <img src="cakes/08.jpg" alt="Cake 08" />
+        <img src="cakes/09.jpg" alt="Cake 09" />
+        <img src="cakes/10.jpg" alt="Cake 10" />
+        <img src="cakes/11.jpg" alt="Cake 11" />
+        <img src="cakes/12.jpg" alt="Cake 12" />
+        <img src="cakes/13.jpg" alt="Cake 13" />
+        <img src="cakes/14.jpg" alt="Cake 14" />
+
+        <!-- duplicate again for smooth infinite scroll -->
+        <img src="cakes/01.jpg" alt="Cake 01" />
+        <img src="cakes/02.jpg" alt="Cake 02" />
+        <img src="cakes/03.jpg" alt="Cake 03" />
+        <img src="cakes/04.jpg" alt="Cake 04" />
+        <img src="cakes/05.jpg" alt="Cake 05" />
+        <img src="cakes/06.jpg" alt="Cake 06" />
+        <img src="cakes/07.jpg" alt="Cake 07" />
+        <img src="cakes/08.jpg" alt="Cake 08" />
+        <img src="cakes/09.jpg" alt="Cake 09" />
+        <img src="cakes/10.jpg" alt="Cake 10" />
+        <img src="cakes/11.jpg" alt="Cake 11" />
+        <img src="cakes/12.jpg" alt="Cake 12" />
+        <img src="cakes/13.jpg" alt="Cake 13" />
+        <img src="cakes/14.jpg" alt="Cake 14" />
+        </div>
+      </div>
+
+      <!-- Second row (15–28) -->
+      <div class="slider-row reverse">
+        <div class="slider-track">
+          <img src="cakes/15.jpg" alt="Cake 15" />
+        <img src="cakes/16.jpg" alt="Cake 16" />
+        <img src="cakes/17.jpg" alt="Cake 17" />
+        <img src="cakes/18.jpg" alt="Cake 18" />
+        <img src="cakes/19.jpg" alt="Cake 19" />
+        <img src="cakes/20.jpg" alt="Cake 20" />
+        <img src="cakes/21.jpg" alt="Cake 21" />
+        <img src="cakes/22.jpg" alt="Cake 22" />
+        <img src="cakes/23.jpg" alt="Cake 23" />
+        <img src="cakes/24.jpg" alt="Cake 24" />
+        <img src="cakes/25.jpg" alt="Cake 25" />
+        <img src="cakes/26.jpg" alt="Cake 26" />
+        <img src="cakes/27.jpg" alt="Cake 27" />
+        <img src="cakes/28.jpg" alt="Cake 28" />
+
+        <!-- duplicate again -->
+        <img src="cakes/15.jpg" alt="Cake 15" />
+        <img src="cakes/16.jpg" alt="Cake 16" />
+        <img src="cakes/17.jpg" alt="Cake 17" />
+        <img src="cakes/18.jpg" alt="Cake 18" />
+        <img src="cakes/19.jpg" alt="Cake 19" />
+        <img src="cakes/20.jpg" alt="Cake 20" />
+        <img src="cakes/21.jpg" alt="Cake 21" />
+        <img src="cakes/22.jpg" alt="Cake 22" />
+        <img src="cakes/23.jpg" alt="Cake 23" />
+        <img src="cakes/24.jpg" alt="Cake 24" />
+        <img src="cakes/25.jpg" alt="Cake 25" />
+        <img src="cakes/26.jpg" alt="Cake 26" />
+        <img src="cakes/27.jpg" alt="Cake 27" />
+        <img src="cakes/28.jpg" alt="Cake 28" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section" aria-labelledby="contact-us-title">
+    <div id="contact-left" role="complementary">
+      <h2 id="contact-us-title">CONTACT US</h2>
+      <label>Thank you! Share your thoughts and share your designs with us!!!!</label>
+      <label>Contact us to order</label>
+      <a href="https://wa.me/919947554855" target="_blank" class="contact-link">
+        <div class="contact-info" tabindex="0">
+          <img src="whatsapp.png" alt="WhatsApp icon stylized in green with text bubble" />
+          <span>9947554855</span>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/honeyhomecake_" target="_blank" class="contact-link">
+        <div class="contact-info" tabindex="0">
+          <img src="instagram.png" alt="Instagram icon stylized in pink and orange colors" />
+          <span>HONEY HOME CAKE</span>
+        </div>
+      </a>
+      <a href="https://goo.gl/maps/FojLxucma96o5EsG9" target="_blank" class="find-us-text" role="link" tabindex="0" aria-label="Open Google Maps to find us">
+        WHERE TO FIND US ?
+      </a>
+    </div>
+    <div id="contact-right" role="form" aria-label="Contact form">
+  <!-- Thank you message (initially hidden) -->
+  <div id="thankYouMessage" style="display: none; padding: 1rem; background-color: #d4edda; color: #155724; border-radius: 5px;">
+    Thank you for reaching out! We will get back to you soon.
+  </div>
+
+  <!-- Contact form -->
+  <form id="contactForm" method="POST" novalidate>
+    <label for="name">NAME :</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" aria-required="true" required />
+
+    <label for="phone">PHONE NUMBER :</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" aria-required="true"
+      pattern="\d{10,15}" required title="Please enter a valid phone number (10-15 digits)" />
+
+    <label for="message">MESSAGE :</label>
+    <textarea id="message" name="message" placeholder="Write your message here" aria-required="true"
+      required></textarea>
+
+    <button type="submit" aria-label="Send message">SEND</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const name = form.name.value.trim();
+    const phone = form.phone.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name) {
+      alert("Please enter your name.");
+      form.name.focus();
+      return;
+    }
+
+    const phonePattern = /^\d{10,15}$/;
+    if (!phonePattern.test(phone)) {
+      alert("Please enter a valid phone number with 10 to 15 digits.");
+      form.phone.focus();
+      return;
+    }
+
+    if (!message) {
+      alert("Please enter a message.");
+      form.message.focus();
+      return;
+    }
+
+    // Prepare FormData to send to Formspree
+    const formData = new FormData(form);
+
+    // Replace this URL with your actual Formspree endpoint
+    fetch("https://formspree.io/f/xvgrjqjk", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          form.style.display = "none";
+          document.getElementById("thankYouMessage").style.display = "block";
+        } else {
+          alert("There was a problem submitting the form. Please try again.");
+        }
+      })
+      .catch(error => {
+        console.error("Form submission error:", error);
+        alert("There was a network error. Please try again later.");
+      });
+  });
+</script>
+
+
+ </section>
+</main>
+
+<footer>
+  © honeyhomecake <span aria-hidden="true">♡</span> HONEY HOME CAKES <span aria-hidden="true">♡</span>
+</footer>
+
+<script>
+  function scrollToContact() {
+    const contactSection = document.getElementById('contact-section');
+    contactSection.scrollIntoView({behavior: 'smooth'});
+  }
+
+   
+</script>
+
+</body>
+</html>
